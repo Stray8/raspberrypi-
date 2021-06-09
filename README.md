@@ -2,7 +2,7 @@
 单片机发送指令，树莓派识别并串口发送给单片机
 
 
-# 树莓派换源
+# 一.树莓派换源
 树莓派换国内软件源（buster版本）
 源地址 http://www.raspbian.org/RaspbianMirrors
 1.sudo nano /etc/apt/sources.list   #修改软件更新源
