@@ -29,3 +29,7 @@ sudo raspi-config
 
 # 设置树莓派开机自启
 sudo vim
+
+
+# 通信协议
+
