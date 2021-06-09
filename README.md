@@ -20,7 +20,9 @@ deb-src (源地址)/raspberrypi/ buster main ui
 二.设置python3为默认python
 1.sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 100
 2.sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 150
-
+ 
 
 三.配置串口
 sudo raspi-config
+
+
