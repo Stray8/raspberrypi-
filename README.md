@@ -5,8 +5,10 @@
 源地址: http://www.raspbian.org/RaspbianMirrors
 ### 1.sudo nano /etc/apt/sources.list   #修改软件更新源
 把原来的源注释，输入
-```deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi```
-```deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi```
+```
+deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
+deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
+```
 #输入结束 crtl+O保存 crtl+X退出
 ### 2.sudo nano /etc/apt/sources.list.d/raspi.list
 注释原来的源，输入
