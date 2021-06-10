@@ -4,30 +4,35 @@
 ## 一.树莓派换国内软件源（buster版本）
 镜像源地址: http://www.raspbian.org/RaspbianMirrors
 ```
-sudo nano /etc/apt/sources.list   #修改软件更新源
+sudo nano /etc/apt/sources.list   #编辑系统源文件
 ```
+
 把原来的源注释，输入
 ```
-deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
-deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
-
+deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
+deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
 #输入结束 crtl+O保存 crtl+X退出
 ```
 
 ```
-sudo nano /etc/apt/sources.list.d/raspi.list
+sudo nano /etc/apt/sources.list.d/raspi.list  #修改系统源
 ```
+
 注释原来的源，输入
 ```
-deb http://mirrors.ustc.edu.cn/raspberrypi/ buster main ui
-deb-src http://mirrors.ustc.edu.cn/raspberrypi/ buster main ui
-
+deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui
+deb-src http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui
 #输入结束 crtl+o保存 crtl+x退出
 ```
 
 ```
-sudo apt-get update&&upgrade
+sudo apt-get update&&upgrade         #完成源的更新软件包索引
 ```
+
+```
+                                     #修改pip源
+```
+
 ## 二.配置python并安装必要库
 设置python3为默认python
 ```
