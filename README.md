@@ -10,8 +10,10 @@ sudo nano /etc/apt/sources.list   #修改软件更新源
 ```
 deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
 deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
-```
+
 #输入结束 crtl+O保存 crtl+X退出
+```
+
 ```
 sudo nano /etc/apt/sources.list.d/raspi.list
 ```
@@ -19,8 +21,10 @@ sudo nano /etc/apt/sources.list.d/raspi.list
 ```
 deb http://mirrors.ustc.edu.cn/raspberrypi/ buster main ui
 deb-src http://mirrors.ustc.edu.cn/raspberrypi/ buster main ui
-```
+
 #输入结束 crtl+o保存 crtl+x退出
+```
+
 ```
 sudo apt-get update&&upgrade
 ```
